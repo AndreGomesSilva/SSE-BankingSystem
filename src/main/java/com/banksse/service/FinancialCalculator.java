@@ -1,9 +1,10 @@
-package com.banksse;
+package com.banksse.service;
+import com.banksse.exception.InvalidFinancialParameterException;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
 
-class FinancialCalculator {
+public class FinancialCalculator {
 
     private void validateInputs(BigDecimal principal, BigDecimal rate) throws InvalidFinancialParameterException {
         if (principal == null || rate == null) {

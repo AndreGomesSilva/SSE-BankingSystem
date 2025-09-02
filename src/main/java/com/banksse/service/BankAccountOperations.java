@@ -1,4 +1,4 @@
-package com.banksse;
+package com.banksse.service;
 
 import java.math.BigDecimal;
 

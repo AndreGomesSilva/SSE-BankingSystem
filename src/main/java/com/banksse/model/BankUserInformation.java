@@ -1,4 +1,4 @@
-package com.banksse;
+package com.banksse.model;
 
 public class BankUserInformation {
     private  String name;
