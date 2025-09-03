@@ -1,9 +1,12 @@
 package com.banksse;
+
+import com.banksse.exception.InvalidFinancialParameterException;
+import com.banksse.service.FinancialCalculator;
 import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.*;
 
-class FinancialCalculatorTest {
+class FinancialCalculatorTests {
 
     // Simple Interest
     @Test
