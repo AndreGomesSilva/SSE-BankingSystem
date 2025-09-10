@@ -1,5 +1,7 @@
 package com.banksse.service;
 
+import jakarta.persistence.Entity;
+
 import java.math.BigDecimal;
 
 public class Account {
