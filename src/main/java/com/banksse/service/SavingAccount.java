@@ -1,5 +1,6 @@
 package com.banksse.service;
 import java.math.BigDecimal;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class SavingAccount extends Account{
@@ -7,10 +8,10 @@ public class SavingAccount extends Account{
     private Integer number;
     private BigDecimal rateInterest;
     private BigDecimal withdrawLimit = new BigDecimal(1000.00);
-    public Logger logger = Logger.getLogger(SavingAccount.class.getName());
+    public static Logger logger = Logger.getLogger(SavingAccount.class.getName());
 
     public SavingAccount(BigDecimal balance, Integer agency, BigDecimal rate){
-        logger.info("Class Saving Account Created");
+        logger.log(Level.INFO, "SavingAccount Created");
        super.setAgency(agency);
        super.setBalance(balance);
        number = counter++ + 1200;
